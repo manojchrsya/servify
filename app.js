@@ -23,7 +23,7 @@ const conn = mongoose.connection;
 conn.on('error', console.error.bind(console, 'connection error:'));
 conn.once('open', () => {
   // eslint-disable-next-line no-console
-  console.log('connected to adatabase');
+  console.log('connected to database.');
 });
 
 // Create global app object
