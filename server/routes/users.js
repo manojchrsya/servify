@@ -8,6 +8,8 @@ const Users = require('../controllers/Users');
 
 const userInstance = new Users();
 // Get all users
+// you can filter the result by passing `q` paramenter in query string
+// eg: localhost:3000/?q=manoj
 router.get('/', async (req, res) => {
   const data = await userInstance.list(req.query);
   return res.send(data);
