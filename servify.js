@@ -2,6 +2,7 @@
 const program = require('commander');
 
 const pkg = require('./package.json');
+require('dotenv').config();
 
 program
   .version(pkg.version);
